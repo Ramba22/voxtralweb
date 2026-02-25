@@ -1,6 +1,14 @@
 {
   "version": 2,
-  "public": true,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "."
+      }
+    }
+  ],
   "github": {
     "silent": true
   }
