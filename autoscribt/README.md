@@ -44,7 +44,10 @@ Vercel Auto-Deploy
 - `start-tunnel.sh` - Starts the cloudflared tunnel and extracts the URL
 - `update-url.sh` - Monitors and updates config.js when URL changes
 - `js/config.js` - Template configuration file
-- `public/index.html` - Example HTML file showing config usage
+- `public/index.html` - Symlink to root index.html for local dev
+- `index.html` - Main HTML file for Vercel deployment
+- `css/style.css` - Styling for the web interface
+- `js/app.js` - Application logic
 - `cloudflared-tunnel.service` - Systemd service file for automatic startup
 - `vercel.json` - Vercel deployment configuration
 - `package.json` - NPM configuration for deployment

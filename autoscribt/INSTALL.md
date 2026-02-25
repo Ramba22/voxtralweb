@@ -45,12 +45,13 @@ Ensure your project has this structure:
 ```
 voxtral-web/
 ├── public/
-│   └── index.html
+│   └── index.html (symlink to ../index.html)
 ├── css/
 │   └── style.css
 ├── js/
 │   ├── config.js
 │   └── app.js
+├── index.html (main file for Vercel)
 ├── start-tunnel.sh
 ├── update-url.sh
 ├── cloudflared-tunnel.service
