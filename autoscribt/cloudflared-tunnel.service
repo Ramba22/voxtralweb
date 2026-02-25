@@ -1,0 +1,16 @@
+[Unit]
+Description=Cloudflared Tunnel Service
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/home/%i/voxtral-web
+ExecStart=/home/%i/bin/start-tunnel.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

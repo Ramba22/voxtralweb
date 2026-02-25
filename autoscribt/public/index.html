@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxtral Web App - Auto-Deploy System</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Voxtral Web App</h1>
+            <p>Automated deployment system with dynamic API configuration</p>
+        </header>
+        
+        <main>
+            <section class="api-info-card">
+                <h2>API Configuration</h2>
+                <div id="api-info">
+                    <p>Loading API configuration...</p>
+                </div>
+                
+                <div class="api-info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Status</span>
+                        <span class="info-value">
+                            <span class="status-indicator status-active"></span>
+                            Active
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Last Update</span>
+                        <span class="info-value" id="last-update">Loading...</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Auto-Refresh</span>
+                        <span class="info-value">Enabled</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="file-upload-section">
+                <h2>File Operations</h2>
+                <div id="upload-status" class="status-message status-success" style="display: none;">
+                    Ready for file operations
+                </div>
+                
+                <div class="upload-area" id="drop-zone">
+                    <div class="upload-icon">📁</div>
+                    <p class="upload-text">Drag & drop files here or click to browse</p>
+                    <p class="upload-hint">Supports all file types</p>
+                    <input type="file" id="file-input" class="file-input" multiple>
+                    <button class="btn" id="browse-btn">Browse Files</button>
+                </div>
+                
+                <div class="progress-container" id="progress-container" style="display: none;">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                
+                <div class="file-list" id="file-list"></div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Auto-Deploy System | Dynamic API Configuration | Real-time Updates</p>
+        </footer>
+    </div>
+    
+    <script src="../js/config.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
