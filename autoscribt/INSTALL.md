@@ -54,6 +54,8 @@ voxtral-web/
 ├── start-tunnel.sh
 ├── update-url.sh
 ├── cloudflared-tunnel.service
+├── vercel.json
+├── package.json
 ├── PROMPT.md
 ├── INSTALL.md
 └── README.md

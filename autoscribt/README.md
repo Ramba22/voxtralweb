@@ -46,6 +46,8 @@ Vercel Auto-Deploy
 - `js/config.js` - Template configuration file
 - `public/index.html` - Example HTML file showing config usage
 - `cloudflared-tunnel.service` - Systemd service file for automatic startup
+- `vercel.json` - Vercel deployment configuration
+- `package.json` - NPM configuration for deployment
 - `INSTALL.md` - Complete installation guide
 
 ## 🚀 Quick Start

@@ -1,0 +1,24 @@
+{
+  "name": "voxtral-web",
+  "version": "1.0.0",
+  "description": "Auto-deploy system with dynamic API configuration",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve ./public",
+    "build": "echo 'Build completed'",
+    "start": "npx serve ./public"
+  },
+  "keywords": [
+    "vercel",
+    "deployment",
+    "cloudflare",
+    "tunnel",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
